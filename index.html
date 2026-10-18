@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="bn" data-theme="light" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BhumiDisha (ভূমিদিশা) — জমির তথ্য, যাচাই ও সহায়তা</title>
+    <meta name="description" content="জমির তথ্য, যাচাই ও সহায়তা—এক প্ল্যাটফর্মে। Land Information, Verification and Assistance — One Platform for Bangladesh." />
+    <meta property="og:title" content="BhumiDisha (ভূমিদিশা) — জমির তথ্য, যাচাই ও সহায়তা" />
+    <meta property="og:description" content="জমির তথ্য, যাচাই ও সহায়তা—এক প্ল্যাটফর্মে। Land Information, Verification and Assistance — One Platform for Bangladesh." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('bhumidisha_theme_v3');
+          if (saved === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F4F9F5] dark:bg-[#0D1812] text-[#202923] dark:text-[#E4EBE6] antialiased selection:bg-[#126B3A] selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+/* Explicit selector-based dark mode so OS prefers-color-scheme does NOT force dark mode */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
+
+@layer base {
+  :root, [data-theme="light"], .light {
+    --font-bengali: 'Noto Sans Bengali', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+    /* BhumiDisha Approved Theme Tokens - Default Clean White & Green */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F4F9F5;
+    --bg-card: #FFFFFF;
+    --bg-muted: #EFF8F2;
+    --brand-green: #126B3A;
+    --brand-green-secondary: #198754;
+    --text-primary: #202923;
+    --text-secondary: #66736B;
+    --border-color: #D9E7DD;
+    --button-secondary-brown: #A66A3F;
+
+    --color-primary: #126B3A;
+    --color-secondary: #198754;
+    --color-accent-brown: #A66A3F;
+    --color-bg-main: #FFFFFF;
+    --color-surface-mint: #EFF8F2;
+    --color-text-main: #202923;
+    --color-text-muted: #66736B;
+    --color-border: #D9E7DD;
+  }
+
+  [data-theme="dark"], .dark {
+    --bg-primary: #0D1812;
+    --bg-secondary: #14241B;
+    --bg-card: #15241C;
+    --bg-muted: #1A3024;
+    --brand-green: #38C172;
+    --brand-green-secondary: #28A745;
+    --text-primary: #E8F0EC;
+    --text-secondary: #9BB0A3;
+    --border-color: #233B2D;
+    --button-secondary-brown: #C98A5E;
+
+    --color-primary: #38C172;
+    --color-secondary: #28A745;
+    --color-accent-brown: #C98A5E;
+    --color-bg-main: #0D1812;
+    --color-surface-mint: #15241C;
+    --color-text-main: #E8F0EC;
+    --color-text-muted: #9BB0A3;
+    --color-border: #233B2D;
+  }
+
+  body {
+    font-family: var(--font-bengali), var(--font-sans);
+    background-color: #F4F9F5;
+    color: #202923;
+  }
+
+  [data-theme="dark"] body, .dark body {
+    background-color: #0D1812;
+    color: #E8F0EC;
+  }
+}
+
+/* Hero Keyframe Animations */
+@keyframes cursorBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-cursor-blink {
+  animation: cursorBlink 0.65s infinite ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cursor-blink {
+    animation: none !important;
+    display: none !important;
+  }
+}
+
+/* React Flow custom styling */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+/* Clean print styling for PDF evidence reports */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "BhumiDisha (ভূমিদিশা)",
+  "description": "জমির তথ্য, যাচাই ও সহায়তা—এক প্ল্যাটফর্মে। Land Information, Verification and Assistance — One Platform for Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
