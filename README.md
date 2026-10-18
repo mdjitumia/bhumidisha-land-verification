@@ -276,9 +276,8 @@ For a standard Vite configuration, the build command is usually `npm run build` 
 
 ### Live Demo
 
-Add the actual Vercel URL after deployment:
 
-`[Add deployed Vercel URL here]`
+`[https://bhumidisha-land-verification.vercel.app/]`
 
 
 ---
@@ -318,7 +317,7 @@ Complete this section before submission with the verified information.
 - **Competition:** LandTech 2026 — LandTech Innovation Hackathon
 - **Selected Problem:** P3 — Catch Fraud & Double-Selling also working on P1 & p5
 - **Code Repository:** This GitHub repository
-- **Live Demo:** Add the actual Vercel URL after deployment
+- **Live Demo:** https://bhumidisha-land-verification.vercel.app/
 
 The concept note, source repository, README, deployed prototype, and demo video should describe the same project scope and avoid claiming features or integrations that have not been implemented and tested.
 
